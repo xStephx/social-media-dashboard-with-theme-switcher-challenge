@@ -1,6 +1,6 @@
 const toggle = document.getElementById('check')
 
-const currentTheme = localStorage.getItem('theme')
+const currentTheme = localStorage.getItem('theme') || 'dark'
 
 if (currentTheme === 'dark') {
   document.documentElement.classList.add('dark')
